@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+{% block body %}
+  <h1>Login</h1>
+  <form method="POST" action="">
+    <div class="form-group">
+      <label>Email</label>
+      {{ login_user_form. }}
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      {{ login_user_form.password }}
+    </div>
+    <div class="form-group">
+      {{ login_user_form.remember }}
+      <label for="remember_me">Remember me</label>
+    </div>
+
+    <div class="form-group">
+      <p><a href="/register">Don't have an account? Sign up</a></p>
+    </div>
+
+
+    <p><input type="submit" class="btn btn-primary" value="Login"></p>
+  </form>
+{% endblock %}

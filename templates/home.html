@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+{% block body %}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://kit.fontawesome.com/6e332fcb56.js" crossorigin="anonymous"></script>
+	<link href="/static/home.css" rel="stylesheet">
+</head>
+<body>
+<header class="showcase">
+	 <div class="content">
+		 <div class="title">
+			 <h1>Welcome to our Platform</h1>
+		 </div>
+		 <div class="text">
+			 We help you get the right human for taking your photos
+		 </div>
+		 <div class="button call">
+			 <a href="{{ url_for('client_upload') }}"><button class="photo">Get Started</button></a>
+		 </div>
+	 </div>
+</header>
+<!--Services-->
+<section class="services">
+	<div class="container grid-3 center">
+		<div>
+				<i class="fas fa-camera fa-4x"></i>
+				<h3>Quality Service</h3>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, maxime!</p>
+		</div>
+		<div>
+				<i class="fas fa-portrait fa-4x"></i>
+				<h3>Photographer Recommendation</h3>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, maxime!</p>
+		</div>
+		<div>
+				<i class="fas fa-business-time fa-4x"></i>
+				<h3>Fast Recommendation</h3>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi, maxime!</p>
+		</div>
+	</div>
+</section>
+<!--About-->
+<section class="about bg-light">
+	<div class="container">
+		<div class="grid-2">
+			<div class="center">
+					<i class="fas fa-laptop fa-10x"></i>
+			</div>
+			<div >
+					<h3>About Us</h3>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet voluptatibus, numquam obcaecati debitis architecto quia maxime molestiae est itaque, nesciunt fugiat et cupiditate repellendus aut officia magni eum laborum reiciendis veritatis corporis commodi esse ducimus quo. Expedita cumque omnis tenetur.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!--Footer-->
+<footer class="center bg-dark">
+	<p>Photography System &copy; 2019</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+</body>
+</html>
+{% endblock %}
